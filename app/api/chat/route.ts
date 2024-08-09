@@ -8,6 +8,7 @@ import {
   tool,
 } from 'ai'
 import { createAnthropic } from '@ai-sdk/anthropic'
+export const runtime = 'edge' // 添加这行来使用边缘运行时
 const anthropic = createAnthropic({
   baseURL: process.env.ANTHROPIC_BASE_URL, // 添加您想要的baseURL
   apiKey: process.env.ANTHROPIC_API_KEY, // 确保使用环境变量存储API密钥
